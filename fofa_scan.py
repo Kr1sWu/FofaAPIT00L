@@ -65,7 +65,7 @@ def add_http_prefix(input_file, output_file):
             else:
                 # 否则，将http://添加到行首
                 outfile.write('http://' + stripped_line + '\n')
-    print("程序执行完成! 新的文件名: ", output_file)
+    print("程序执行完成! 目标url文件名: ", output_file)
 
 # 开始测绘
 sendurl()
