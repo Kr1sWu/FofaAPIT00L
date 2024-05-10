@@ -32,13 +32,11 @@ def sendurl():
     print(res.url)
     # 转换为JSON
     data = json.loads(res.text)
-    # 判断HTTP状态码
     if res.status_code != 200:
         print("Error:", res.status_code)
     else:
         print("Success! ", res.status_code)
     for i in data["results"]:
-        # 从列表里取出host和port
         host = i[0]
         port = i[1]
         if port != "80":
