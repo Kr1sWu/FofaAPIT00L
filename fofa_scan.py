@@ -35,7 +35,8 @@ def sendurl():
     if res.status_code != 200:
         print("Error:", res.status_code)
     else:
-        print("Success! ", res.status_code)
+        print("\033[92m[REQUEST SUCCESS]!\033[0m"+" 状态码: ", res.status_code)
+        print("\033[93mSTARTING ...   TnT\033[0m")
     for i in data["results"]:
         host = i[0]
         port = i[1]
@@ -43,16 +44,12 @@ def sendurl():
             target = host  # +":"+port
         else:
             target = host
-        # 检查从JSON列表提取的结果
-        print(target)
+       print("\033[91m[gank!]\033[0m"+target)
         # 把target写入文件
         with open('targets.txt', 'a') as file:
-            # file = open('targets.txt', 'a')
             file.write(str(target)+"\n")
             file.close()
 
-
-# 处理文件
 def add_http_prefix(input_file, output_file):
     with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
         # 遍历每一行
