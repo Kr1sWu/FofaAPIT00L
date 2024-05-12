@@ -44,7 +44,7 @@ def sendurl():
             target = host  # +":"+port
         else:
             target = host
-       print("\033[91m[gank!]\033[0m"+target)
+       print("\033[91m[gank]\033[0m"+target)
         # 把target写入文件
         with open('targets.txt', 'a') as file:
             file.write(str(target)+"\n")
