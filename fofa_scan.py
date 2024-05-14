@@ -5,15 +5,6 @@ import pyfiglet
 
 banner = pyfiglet.figlet_format("FofaScan")
 print(banner)
-"""
-1.通过url拼接完成API调用
- - url + Key认证(Base64) + Payload(语法&筛选) 
-
-2.进行结果处理
- - JSON格式数据处理
- - 返回结果保存本地
- - 进行url筛选以进行后期批量POC验证
-"""
 
 url = "https://fofa.info/api/v1/search/all"
 
