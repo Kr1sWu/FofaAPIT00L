@@ -22,11 +22,9 @@ url = "https://fofa.info/api/v1/search/all"
 #query = 'app="泛微-协同办公OA"'
 query = 'app="Landray-OA系统"'
 
-
-
 query_bs64 = base64.b64encode(query.encode('utf-8')).decode('utf-8')
 
-print("查询语句(base64): "+query_bs64)
+print("FOFA: "+query)
 
 params = {
     "key": "YOU_API_KEY",
