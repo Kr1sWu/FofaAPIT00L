@@ -3,7 +3,7 @@ import json
 import base64
 import pyfiglet
 
-banner = pyfiglet.figlet_format("FofaScan")
+banner = pyfiglet.figlet_format("FofaAPIT00L")
 print(banner)
 
 url = "https://fofa.info/api/v1/search/all"
